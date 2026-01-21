@@ -12,3 +12,6 @@ export type PlayerState = 'playing' | 'paused' | 'buffering' | 'stopped';
 
 export type LoadingState = 'idle' | 'loading' | 'success' | 'error';
 
+
+export const SUPPORTED_AUDIO_FORMATS = ['audio/mpeg', 'audio/wav', 'audio/ogg'];
+
