@@ -131,6 +131,9 @@ export class TrackFormComponent implements OnInit {
     description: ['', [Validators.maxLength(VALIDATION.DESCRIPTION_MAX_LENGTH)]]
   });
 
+  /**
+   * Lifecycle hook - Initialize form with track data
+   */
   ngOnInit(): void {
     this.form.patchValue({
       title: this.track.title,
@@ -140,6 +143,9 @@ export class TrackFormComponent implements OnInit {
     });
   }
 
+  /**
+   * Handle form submission - emit save event with updated track data
+   */
   onSubmit(): void {
     if (this.form.invalid) return;
 
