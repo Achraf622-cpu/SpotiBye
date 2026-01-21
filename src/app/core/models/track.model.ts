@@ -64,5 +64,11 @@ export interface UpdateTrackDto {
   isFavorite?: boolean;
 }
 
+export interface AudioFile {
+  id: string;
+  blob: Blob;
+  mimeType: string;
+  size: number;
+}
 
 
