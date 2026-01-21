@@ -8,3 +8,4 @@ export const MUSIC_CATEGORIES: MusicCategory[] = [
   'pop', 'rock', 'rap', 'jazz', 'classical', 'electronic', 'rnb', 'country', 'other'
 ];
 
+export type PlayerState = 'playing' | 'paused' | 'buffering' | 'stopped';
