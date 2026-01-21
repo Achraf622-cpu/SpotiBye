@@ -9,3 +9,6 @@ export const MUSIC_CATEGORIES: MusicCategory[] = [
 ];
 
 export type PlayerState = 'playing' | 'paused' | 'buffering' | 'stopped';
+
+export type LoadingState = 'idle' | 'loading' | 'success' | 'error';
+
