@@ -1,12 +1,27 @@
-import { Component, signal } from '@angular/core';
+/**
+ * @fileoverview App Root Component - Responsive application shell
+ * @see SPOT-26 Responsive Design Implementation
+ */
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { PlayerBarComponent } from './shared/components/player-bar/player-bar.component';
+import { NotificationsComponent } from './shared/components/notifications/notifications.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.css'
+  standalone: true,
+  imports: [RouterOutlet, PlayerBarComponent, NotificationsComponent],
+  template: `
+    <div class="min-h-screen">
+      <router-outlet />
+      <app-player-bar />
+      <app-notifications />
+    </div>
+  `,
+  styles: [`
+    :host {
+      display: block;
+    }
+  `]
 })
-export class App {
-  protected readonly title = signal('SpotiBye');
-}
+export class App { }
