@@ -21,3 +21,25 @@ export const VALIDATION = {
   DESCRIPTION_MAX_LENGTH: 200,
 } as const;
 
+export interface Track {
+  id: string;
+
+  title: string;
+
+  artist: string;
+
+  description?: string;
+
+  category: MusicCategory;
+
+  duration: number;
+
+  dateAdded: Date;
+
+  audioFileId: string;
+
+  coverImage?: string;
+
+  isFavorite: boolean;
+}
+
