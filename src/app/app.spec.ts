@@ -24,6 +24,9 @@ describe('App', () => {
     expect(app).toBeTruthy();
   });
 
+  /**
+   * Test: Template rendering
+   */
   it('should render title', async () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
