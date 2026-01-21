@@ -1,6 +1,13 @@
+/**
+ * @fileoverview App Component Unit Tests
+ * @see SPOT-27 Unit Tests Setup
+ */
 import { TestBed } from '@angular/core/testing';
 import { App } from './app';
 
+/**
+ * Test suite for the root App component
+ */
 describe('App', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
