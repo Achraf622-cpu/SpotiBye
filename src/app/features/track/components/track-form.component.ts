@@ -107,6 +107,13 @@ import { Track, MUSIC_CATEGORIES, VALIDATION, UpdateTrackDto } from '../../../co
     </div>
   `
 })
+/**
+ * TrackFormComponent - A reactive form component for editing track metadata.
+ * Uses Angular Reactive Forms for validation and form state management.
+ * 
+ * @example
+ * <app-track-form [track]="selectedTrack" (save)="onSave($event)" (cancel)="onCancel()" />
+ */
 export class TrackFormComponent implements OnInit {
   @Input({ required: true }) track!: Track;
   @Output() save = new EventEmitter<UpdateTrackDto>();
