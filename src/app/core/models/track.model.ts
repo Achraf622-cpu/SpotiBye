@@ -43,3 +43,26 @@ export interface Track {
   isFavorite: boolean;
 }
 
+/**
+ * Data required to create a new track
+ */
+export interface CreateTrackDto {
+  title: string;
+  artist: string;
+  description?: string;
+  category: MusicCategory;
+  audioFile: File;
+  coverImage?: string;
+}
+
+export interface UpdateTrackDto {
+  title?: string;
+  artist?: string;
+  description?: string;
+  category?: MusicCategory;
+  coverImage?: string;
+  isFavorite?: boolean;
+}
+
+
+
