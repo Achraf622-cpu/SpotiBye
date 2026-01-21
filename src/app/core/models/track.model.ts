@@ -16,3 +16,8 @@ export const SUPPORTED_AUDIO_FORMATS = ['audio/mpeg', 'audio/wav', 'audio/ogg'];
 
 export const MAX_FILE_SIZE = 10 * 1024 * 1024;
 
+export const VALIDATION = {
+  TITLE_MAX_LENGTH: 50,
+  DESCRIPTION_MAX_LENGTH: 200,
+} as const;
+
