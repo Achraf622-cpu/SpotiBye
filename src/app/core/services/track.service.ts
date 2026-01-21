@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Track Service - Core service for music track management
+ * @see SPOT-14 Implement Track Service
+ */
 import { Injectable, signal, computed } from '@angular/core';
 import {
     Track,
