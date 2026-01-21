@@ -232,6 +232,9 @@ export class TrackDetailComponent implements OnInit {
     this.loadTrack();
   }
 
+  /**
+   * Load track data from route parameter ID
+   */
   async loadTrack(): Promise<void> {
     const id = this.route.snapshot.paramMap.get('id');
     if (!id) {
@@ -244,6 +247,9 @@ export class TrackDetailComponent implements OnInit {
     this.loading.set(false);
   }
 
+  /**
+   * Check if this track is currently playing
+   */
   isCurrentTrackPlaying(): boolean {
     const current = this.playerService.currentTrack();
     return current?.id === this.track()?.id && this.playerService.isPlaying();
