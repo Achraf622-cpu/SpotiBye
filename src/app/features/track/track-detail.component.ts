@@ -212,6 +212,10 @@ import { TrackFormComponent } from './components/track-form.component';
     </div>
   `
 })
+/**
+ * TrackDetailComponent - Display full track details with playback controls.
+ * Features: play/pause, favorite toggle, edit mode, and delete confirmation.
+ */
 export class TrackDetailComponent implements OnInit {
   private route = inject(ActivatedRoute);
   private router = inject(Router);
