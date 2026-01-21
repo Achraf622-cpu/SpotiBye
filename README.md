@@ -1,59 +1,105 @@
-# SpotiBye
+# 🎵 SpotiBye
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.5.
+A modern music player web application built with **Angular 21** and **TailwindCSS**. SpotiBye allows users to manage and play their local music library directly in the browser using IndexedDB for offline storage.
 
-## Development server
+---
 
-To start a local development server, run:
+## ✨ Features
 
-```bash
-ng serve
+- **🎧 Audio Playback** - Play, pause, seek, and control volume
+- **📚 Music Library** - Upload, organize, and manage your tracks
+- **❤️ Favorites** - Mark tracks as favorites for quick access
+- **🔀 Shuffle & Repeat** - Multiple playback modes
+- **🎨 Modern UI** - Glassmorphism design with smooth animations
+- **💾 Offline Storage** - All tracks stored locally in IndexedDB
+- **📱 Responsive Design** - Works on desktop and mobile
+
+---
+
+## 🛠️ Tech Stack
+
+| Technology | Purpose |
+|------------|---------|
+| Angular 21 | Frontend framework |
+| TailwindCSS | Styling |
+| TypeScript | Type-safe JavaScript |
+| Signals | Reactive state management |
+| IndexedDB | Client-side storage |
+| Vitest | Unit testing |
+
+---
+
+## 📁 Project Structure
+
+```
+src/app/
+├── core/
+│   ├── models/          # Data models (Track)
+│   └── services/        # Business logic
+│       ├── track.service.ts
+│       ├── audio-player.service.ts
+│       ├── storage.service.ts
+│       └── notification.service.ts
+├── features/
+│   ├── library/         # Library page & components
+│   └── track/           # Track detail page
+└── shared/
+    ├── components/      # Reusable UI components
+    └── pipes/           # Custom pipes (duration)
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+---
 
-## Code scaffolding
+## 🚀 Getting Started
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+### Prerequisites
+- Node.js 18+
+- npm or yarn
 
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### Installation
 
 ```bash
-ng generate --help
+# Clone the repository
+git clone https://github.com/Achraf622-cpu/SpotiBye.git
+
+# Navigate to project
+cd SpotiBye
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
 ```
 
-## Building
+Open [http://localhost:4200](http://localhost:4200) in your browser.
 
-To build the project run:
+---
+
+## 📖 Documentation
+
+For detailed Angular concepts and code examples, see the [docs/](./docs/) folder:
+
+- [Components](./docs/2-components.md)
+- [Services](./docs/3-services.md)
+- [Signals](./docs/4-signals.md)
+- [Routing](./docs/5-routing.md)
+- [Data Binding](./docs/6-data-binding.md)
+- [Reactive Forms](./docs/8-reactive-forms.md)
+- [Pipes](./docs/9-pipes.md)
+
+---
+
+## 🧪 Testing
 
 ```bash
-ng build
+# Run unit tests
+npm test
+
+# Build for production
+npm run build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-## Running unit tests
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
